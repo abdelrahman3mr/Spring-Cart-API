@@ -13,7 +13,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Entity
 @Table(name = "categories")
-public class Category {
+public class    Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -22,8 +22,8 @@ public class Category {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "category")
-    private Set<Product> products = new HashSet<>();
+//    @OneToMany(mappedBy = "category",fetch = FetchType.LAZY)
+//    private Set<Product> products = new HashSet<>();
 
     public Category(String name) {
         this.name = name;
@@ -32,4 +32,6 @@ public class Category {
     public Category(byte id) {
         this.id = id;
     }
+
+
 }

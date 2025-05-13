@@ -1,9 +1,20 @@
+server:
+  port: 8088
+
+---
+
 spring:
+  config:
+    activate:
+      on-profile: prod
+
   application:
     name: store
   datasource:
     url: jdbc:mysql://localhost:3306/store_api?createDatabaseIfNotExist=true
     username: root
-    password: MyPassword!
+    password: password
   jpa:
     show-sql: true
+server:
+  port: 8099

@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "taco.orders.page-size",
+      "type": "java.lang.Integer",
+      "description": "Sets the maximum number of orders to display in a list."
+    },
+    {
+      "name": "test.orders.page-size",
+      "type": "java.lang.Integer",
+      "description": "Sets the maximum number of orders to display in a list."
+    }
+  ]
+}

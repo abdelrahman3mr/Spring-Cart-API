@@ -10,7 +10,6 @@ import com.codewithmosh.store.exceptions.ProductNotFoundException;
 import com.codewithmosh.store.mappers.CartMapper;
 import com.codewithmosh.store.repositories.CartRepository;
 import com.codewithmosh.store.repositories.ProductRepository;
-import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.UUID;
@@ -43,7 +42,6 @@ public class CartService {
             throw new ProductNotFoundException();
         }
 
-        //check if products is in cart items
         CartItem cartItem = cart.addItem(product);
 
         cartRepository.save(cart);

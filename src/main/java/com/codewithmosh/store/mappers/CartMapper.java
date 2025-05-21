@@ -6,7 +6,6 @@ import com.codewithmosh.store.entities.Cart;
 import com.codewithmosh.store.entities.CartItem;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.Mappings;
 
 @Mapper(componentModel = "spring")
 public interface CartMapper {
